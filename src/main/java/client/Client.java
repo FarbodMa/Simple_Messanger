@@ -15,7 +15,7 @@ public class Client implements Runnable {
         PrintWriter printWriter = new PrintWriter(socket.getOutputStream());
         Scanner scanner = new Scanner(socket.getInputStream());
         if (kind == -1) {
-            printWriter.println("SEND_MESSAGE_TO_A_CLIENT-90-Hello Client! My name is benyamin!");
+            printWriter.println("SEND_MESSAGE_TO_A_CLIENT-0-Hello Client! My name is benyamin!");
             printWriter.flush();
         } else {
             printWriter.println("This is a message from client");
